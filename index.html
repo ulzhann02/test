@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MeetSu - Авторизация</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		body {
-			background-color: #f1f1f1;
-		}
-		
-		.container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			height: 100vh;
-		}
-		
-		input[type=text], input[type=password] {
-			padding: 10px;
-			margin: 10px;
-			border: none;
-			border-radius: 5px;
-			background-color: #ffffff;
-			box-shadow: 1px 1px 1px grey;
-			width: 100%;
-		}
-		
-		button {
-			background-color: #1e90ff;
-			color: #ffffff;
-			padding: 10px;
-			margin: 10px;
-			border: none;
-			border-radius: 5px;
-			box-shadow: 1px 1px 1px grey;
-			width: 100%;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <title>MeetSU Login</title>
+  <style>
+    /* стили для центрирования элементов по середине экрана */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* стили для формы логина */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* стили для кнопки войти */
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2196F3;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* стили для заголовка */
+    h1 {
+      font-size: 36px;
+      color: #2196F3;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
-	<div class="container">
-		<h1>MeetSu</h1>
-		<form>
-			<label for="username">Логин:</label>
-			<input type="text" id="username" name="username" required>
-			<label for="password">Пароль:</label>
-			<input type="password" id="password" name="password" required>
-			<button type="submit">Войти</button>
-		</form>
-	</div>
+  <form>
+    <h1>MeetSU Login</h1>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    <button type="submit">Войти</button>
+  </form>
+
+  <script src="app.js"></script>
 </body>
 </html>
